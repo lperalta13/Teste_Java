@@ -1,0 +1,46 @@
+package br.com.empresa.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import br.com.empresa.dao.CategoriaDAO;
+import br.com.empresa.dao.ProdutoDAO;
+import br.com.empresa.model.Produto;
+
+
+@WebServlet("/relProduto1")
+public class RelatorioServlet2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		 Produto produto = new Produto();
+		 CategoriaDAO catDAO = new CategoriaDAO();
+		 ProdutoDAO produtoDAO = new ProdutoDAO();
+		 
+		 Long codigoCategoria = Long.parseLong(request.getParameter("categoria"));
+		 System.out.println("atributo categoria: " + request.getParameter("categoria") );
+		 
+		 //buscar a categoria e setar na classe Produto
+		 
+		 
+		 //System.out.println("atributo categoria: " + request.getParameter("categoria") );
+
+		   	List<Produto> listaProdutos = produtoDAO.buscaTodosPorCategoria(codigoCategoria)
+			 RequestDispatcher rd = request.getRequestDispatcher("listaProdutos.jsp");
+			 request.setAttribute("produtos", listaProdutos);
+			 rd.forward(request, response);
+
+
+	 
+		 
+	}
+
+}

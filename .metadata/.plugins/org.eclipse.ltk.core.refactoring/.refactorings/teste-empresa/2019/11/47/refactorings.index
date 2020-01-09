@@ -1,0 +1,29 @@
+1574184102780	Rename type 'Fabricante'
+1574184189782	Rename type 'ModeloCarro'
+1574184495147	Rename type 'FabricanteDAO'
+1574185106722	Rename compilation unit 'ModeloCarroDAO.java'
+1574185553933	Rename type 'alteraFabricanteServlet'
+1574185988656	Rename type 'AtualizaFabricanteServlet'
+1574186009573	Rename type 'FabricanteServlet'
+1574186334284	Delete elements
+1574186379742	Rename resource 'fabricante.jsp'
+1574186395024	Rename resource 'formAlteraFabricante.jsp'
+1574186416901	Rename resource 'listaFabricantes.jsp'
+1574191723164	Rename type 'RemoveFabricante'
+1574192803587	Rename type 'alteraModeloServlet'
+1574193195419	Rename type 'AtualizaModeloServlet'
+1574193521756	Rename type 'CadastroModeloCarroServlet'
+1574194063528	Rename type 'iniciaCadastroModeloCarroServlet'
+1574194303224	Rename type 'RemoveModelo'
+1574194712443	Rename resource 'formAlteraModelo.jsp'
+1574194736792	Rename resource 'listaModelos.jsp'
+1574194902250	Rename resource 'modeloCarro.jsp'
+1574195168940	Rename type 'iniciaCadastroProdutorroServlet'
+1574198231888	Copy file
+1574199147899	Copy compilation unit
+1574248461728	Delete element
+1574248474314	Delete element
+1574249245032	Copy file
+1574249375930	Copy compilation unit
+1574267422792	Copy file
+1574267777829	Copy compilation unit
